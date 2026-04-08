@@ -32,10 +32,10 @@ int main() {
 
          /* print results
         printf("Hand 1: ");
-        for(i=0; i<26; i++) printf("%d ", hand1[i]);
+        for(i=0; i<26; i++) printf("%d ", player1[i]);
     
         printf("\nHand 2: ");
-        for(i=0; i<26; i++) printf("%d ", hand2[i]);
+        for(i=0; i<26; i++) printf("%d ", player2[i]);
 
 
 
