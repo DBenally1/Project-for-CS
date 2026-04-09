@@ -7,73 +7,72 @@ Resources: N/A
 ************************************************************************/
 
 #include <stdio.h>
-int main()
-{
-	back();
 
-	dk();
-	hk();
-	ck();
-	sk();
+int	back(void);
 
-	dq();
-	hq();
-	cq();
-	sq();
+int	dk(void);
+int	hk(void);
+int	ck(void);
+int	sk(void);
 
-	dj();
-	hj();
-	cj();
-	sj();
+int	dq(void);
+int	hq(void);
+int	cq(void)
+int	sq(void);
 
-	d9();
-	h9();
-	c9();
-	s9();
+int	dj(void);
+int	hj(void);
+int	cj(void);
+int	sj(void);
 
-	d8();
-	h8();
-	c8();
-	s8();
+int	d9(void);
+int	h9(void);
+int	c9(void);
+int	s9(void);
+
+int	d8(void);
+int	h8(void);
+int	c8(void);
+int	s8(void);
 	
-	d7();
-	h7();
-	c7();
-	s7();
+int	d7(void);
+int	h7(void);
+int	c7(void);
+int	s7(void);
 
-	d6();
-	h6();
-	c6();
-	s6();
+int	d6(void);
+int	h6(void);
+int	c6(void);
+int	s6(void);
 
-	d5();
-	h5();
-	c5();
-	s5();
+int	d5(void);
+int	h5(void);
+int	c5(void);
+int	s5(void);
 
-	d4();
-	h4();
-	c4();
-	s4();
+int	d4(void);
+int	h4(void);
+int	c4(void);
+int	s4(void);
 
-	d3();
-	h3();
-	c3();
-	s3();
+int	d3(void);
+int	h3(void);
+int	c3(void);
+int	s3(void);
 
-	d2();
-	h2();
-	c2();
-	s2();
+int	d2(void);
+int	h2(void);
+int	c2(void);
+int	s2(void);
 
-	da();
-	ha();
-	ca();
-	sa();
-return 0;
+int	da(void);
+int	ha(void);
+int	ca(void);
+int	sa(void);
+void print_card(int card);
 }
 
-int back()
+void back(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m# # # # # # # # #\033[0m│\n");
@@ -90,10 +89,9 @@ int back()
 	printf ("│\033[0;31m- - - - - - - - -\033[0m│\n");
 	printf ("│\033[0;31m. . . . . . . . .\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int dk()
+void dk(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mK\033[0m                │\n");
@@ -110,10 +108,9 @@ int dk()
         printf ("│                \033[0;31mK\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int hk()
+void hk(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mK\033[0m                │\n");
@@ -130,10 +127,10 @@ int hk()
         printf ("│                \033[0;31mK\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
+
 }
 
-int ck()
+void ck(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│K                │\n");
@@ -150,10 +147,9 @@ int ck()
         printf ("│                K│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int sk()
+void sk(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│K                │\n");
@@ -170,10 +166,9 @@ int sk()
         printf ("│                K│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int dq()
+void dq(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mQ\033[0m                │\n");
@@ -190,10 +185,9 @@ int dq()
         printf ("│                \033[0;31mQ\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int hq()
+void hq(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mQ\033[0m                │\n");
@@ -210,10 +204,9 @@ int hq()
         printf ("│                \033[0;31mQ\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int cq()
+void cq(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│Q                │\n");
@@ -230,10 +223,9 @@ int cq()
         printf ("│                Q│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int sq()
+void sq(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│Q                │\n");
@@ -250,10 +242,9 @@ int sq()
         printf ("│                Q│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int dj()
+void dj(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mJ\033[0m                │\n");
@@ -270,10 +261,9 @@ int dj()
         printf ("│                \033[0;31mJ\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int hj()
+void hj(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mJ\033[0m                │\n");
@@ -290,10 +280,9 @@ int hj()
         printf ("│                \033[0;31mJ\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int cj()
+void cj(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│J                │\n");
@@ -310,10 +299,9 @@ int cj()
         printf ("│                J│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
       
-int sj()
+void sj(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│J                │\n");
@@ -330,10 +318,9 @@ int sj()
         printf ("│                J│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d9()
+void d9(void)
 {
 	printf ("┌─────────────────┐\n");
 	printf ("│\033[0;31m9\033[0m                │\n");
@@ -350,10 +337,9 @@ int d9()
 	printf ("│                \033[0;31m9\033[0m│\n");
 	printf ("│                \033[0;31m♦\033[0m│\n");
 	printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h9()
+void h9(void)
 {
 	printf ("┌─────────────────┐\n");
 	printf ("│\033[0;31m9\033[0m                │\n");
@@ -370,10 +356,9 @@ int h9()
 	printf ("│                \033[0;31m9\033[0m│\n");
 	printf ("│                \033[0;31m♥\033[0m│\n");
 	printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c9()
+void c9(void)
 {
 	printf ("┌─────────────────┐\n");
 	printf ("│9                │\n");
@@ -390,10 +375,9 @@ int c9()
 	printf ("│                9│\n");
 	printf ("│                ♣│\n");
 	printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s9()
+void s9(void)
 {
 	printf ("┌─────────────────┐\n");
 	printf ("│9                │\n");
@@ -410,10 +394,9 @@ int s9()
 	printf ("│                9│\n");
 	printf ("│                ♠│\n");
 	printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d8()
+void d8(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m8\033[0m                │\n");
@@ -430,10 +413,9 @@ int d8()
         printf ("│                \033[0;31m8\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h8()
+void h8(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m8\033[0m                │\n");
@@ -450,10 +432,9 @@ int h8()
         printf ("│                \033[0;31m8\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c8()
+void c8(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│8                │\n");
@@ -470,10 +451,9 @@ int c8()
         printf ("│                8│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s8()
+void s8(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│8                │\n");
@@ -490,10 +470,9 @@ int s8()
         printf ("│                8│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d7()
+void d7(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m7\033[0m                │\n");
@@ -510,10 +489,9 @@ int d7()
         printf ("│                \033[0;31m7\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h7()
+void h7(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m7\033[0m                │\n");
@@ -530,10 +508,9 @@ int h7()
         printf ("│                \033[0;31m7\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c7()
+void c7(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│7                │\n");
@@ -550,10 +527,9 @@ int c7()
         printf ("│                7│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s7()
+void s7(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│7                │\n");
@@ -570,10 +546,9 @@ int s7()
         printf ("│                7│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d6()
+void d6(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m6\033[0m                │\n");
@@ -590,10 +565,9 @@ int d6()
         printf ("│                \033[0;31m6\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h6()
+void h6(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m6\033[0m                │\n");
@@ -610,10 +584,9 @@ int h6()
         printf ("│                \033[0;31m6\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c6()
+void c6(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│6                │\n");
@@ -630,10 +603,9 @@ int c6()
         printf ("│                6│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s6()
+void s6(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│6                │\n");
@@ -650,10 +622,9 @@ int s6()
         printf ("│                6│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d5()
+void d5(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m5\033[0m                │\n");
@@ -670,10 +641,9 @@ int d5()
         printf ("│                \033[0;31m5\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h5()
+void h5(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m5\033[0m                │\n");
@@ -690,10 +660,9 @@ int h5()
         printf ("│                \033[0;31m5\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c5()
+void c5(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│5                │\n");
@@ -710,10 +679,9 @@ int c5()
         printf ("│                5│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s5()
+void s5(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│5                │\n");
@@ -730,10 +698,9 @@ int s5()
         printf ("│                5│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d4()
+void d4(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m4\033[0m                │\n");
@@ -750,10 +717,9 @@ int d4()
         printf ("│                \033[0;31m4\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h4()
+void h4(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m4\033[0m                │\n");
@@ -770,10 +736,9 @@ int h4()
         printf ("│                \033[0;31m4\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c4()
+void c4(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│4                │\n");
@@ -790,10 +755,9 @@ int c4()
         printf ("│                4│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s4()
+void s4(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│4                │\n");
@@ -810,10 +774,9 @@ int s4()
         printf ("│                4│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d3()
+void d3(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m3\033[0m                │\n");
@@ -830,10 +793,9 @@ int d3()
         printf ("│                \033[0;31m3\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h3()
+void h3(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m3\033[0m                │\n");
@@ -850,10 +812,9 @@ int h3()
         printf ("│                \033[0;31m3\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c3()
+void c3(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│3                │\n");
@@ -870,10 +831,9 @@ int c3()
         printf ("│                3│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s3()
+void s3(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│3                │\n");
@@ -890,10 +850,9 @@ int s3()
         printf ("│                3│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int d2()
+void d2(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m2\033[0m                │\n");
@@ -910,10 +869,9 @@ int d2()
         printf ("│                \033[0;31m2\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int h2()
+void h2(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31m2\033[0m                │\n");
@@ -930,10 +888,9 @@ int h2()
         printf ("│                \033[0;31m2\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int c2()
+void c2(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│2                │\n");
@@ -950,10 +907,9 @@ int c2()
         printf ("│                2│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int s2()
+void s2(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│2                │\n");
@@ -970,10 +926,9 @@ int s2()
         printf ("│                2│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int da()
+void da(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mA\033[0m                │\n");
@@ -990,10 +945,9 @@ int da()
         printf ("│                \033[0;31mA\033[0m│\n");
         printf ("│                \033[0;31m♦\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int ha()
+void ha(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│\033[0;31mA\033[0m                │\n");
@@ -1010,10 +964,9 @@ int ha()
         printf ("│                \033[0;31mA\033[0m│\n");
         printf ("│                \033[0;31m♥\033[0m│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int ca()
+void ca(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│A                │\n");
@@ -1030,10 +983,9 @@ int ca()
         printf ("│                A│\n");
         printf ("│                ♣│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
-int sa()
+void sa(void)
 {
         printf ("┌─────────────────┐\n");
         printf ("│A                │\n");
@@ -1050,6 +1002,5 @@ int sa()
         printf ("│                A│\n");
         printf ("│                ♠│\n");
         printf ("└─────────────────┘\n");
-return 0;
 }
 
