@@ -17,7 +17,7 @@ int	sk(void);
 
 int	dq(void);
 int	hq(void);
-int	cq(void)
+int	cq(void);
 int	sq(void);
 
 int	dj(void);
