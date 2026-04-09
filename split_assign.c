@@ -9,13 +9,10 @@
 #define total_cards 52
 #define hand_size 26
 
-int main() {
+void split_assign(int player1[], int player2[])
+{
         int deck[total_cards];
-        int player1[hand_size];
-        int player2[hand_size];
         int i;
-
-
         /*fill the deck with values from 0-51*/
 
         for (i=0; i < total_cards; i++) {
@@ -29,16 +26,7 @@ int main() {
                 player1[i] = deck[i];
                 player2[i] = deck[i + hand_size];
         }
-
-         /* print results
-        printf("Hand 1: ");
-        for(i=0; i<26; i++) printf("%d ", player1[i]);
-    
-        printf("\nHand 2: ");
-        for(i=0; i<26; i++) printf("%d ", player2[i]);
-
-
-
+}
 return 0;
 }
 
