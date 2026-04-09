@@ -14,7 +14,6 @@ void split_assign(int player1[], int player2[])
         int deck[total_cards];
         int i;
         /*fill the deck with values from 0-51*/
-
         for (i=0; i < total_cards; i++) {
                 deck[i] = i;
         }
