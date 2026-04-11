@@ -8,70 +8,107 @@ Resources: N/A
 
 #include <stdio.h>
 
-int	back(void);
+void back(void);
 
-int	dk(void);
-int	hk(void);
-int	ck(void);
-int	sk(void);
+void dk(void);
+void hk(void);
+void ck(void);
+void sk(void);
 
-int	dq(void);
-int	hq(void);
-int	cq(void);
-int	sq(void);
+void dq(void);
+void hq(void);
+void cq(void);
+void sq(void);
 
-int	dj(void);
-int	hj(void);
-int	cj(void);
-int	sj(void);
+void dj(void);
+void hj(void);
+void cj(void);
+void sj(void);
 
-int	d9(void);
-int	h9(void);
-int	c9(void);
-int	s9(void);
+void d9(void);
+void h9(void);
+void c9(void);
+void s9(void);
 
-int	d8(void);
-int	h8(void);
-int	c8(void);
-int	s8(void);
+void d8(void);
+void h8(void);
+void c8(void);
+void s8(void);
 	
-int	d7(void);
-int	h7(void);
-int	c7(void);
-int	s7(void);
+void d7(void);
+void h7(void);
+void c7(void);
+void s7(void);
 
-int	d6(void);
-int	h6(void);
-int	c6(void);
-int	s6(void);
+void d6(void);
+void h6(void);
+void c6(void);
+void s6(void);
 
-int	d5(void);
-int	h5(void);
-int	c5(void);
-int	s5(void);
+void d5(void);
+void h5(void);
+void c5(void);
+void s5(void);
 
-int	d4(void);
-int	h4(void);
-int	c4(void);
-int	s4(void);
+void d4(void);
+void h4(void);
+void c4(void);
+void s4(void);
 
-int	d3(void);
-int	h3(void);
-int	c3(void);
-int	s3(void);
+void d3(void);
+void h3(void);
+void c3(void);
+void s3(void);
 
-int	d2(void);
-int	h2(void);
-int	c2(void);
-int	s2(void);
+void d2(void);
+void h2(void);
+void c2(void);
+void s2(void);
 
-int	da(void);
-int	ha(void);
-int	ca(void);
-int	sa(void);
+void da(void);
+void ha(void);
+void ca(void);
+void sa(void);
 void printCard(int card);
 }
 
+void printCard(int card) 
+{
+	int rank;
+	int suit;
+
+	rank = card % 13;
+	suit = card / 13;
+
+	if (suit == 0) {
+		if (rank == 0) {
+			d2();
+		} else if (rank == 1) {
+			d3();
+		} else if (rank == 2) {
+			d4();
+		} else if (rank == 3) {
+			d5();
+		} else if (rank == 4) {
+			d6();
+		} else if (rank == 5) {
+			d7();
+		} else if (rank == 6) {
+			d8();
+		} else if (rank == 7) {
+			d9();
+
+		} else if (rank == 9) {
+			dj();
+		} else if (rank == 10) {
+			dq();
+		} else if (rank == 11) {
+			dk();
+		} else if (rank == 12) {
+			da();
+		}
+	}
+}
 void back(void)
 {
         printf ("┌─────────────────┐\n");
