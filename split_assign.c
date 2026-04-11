@@ -26,6 +26,4 @@ void split_assign(int player1[], int player2[])
                 player2[i] = deck[i + hand_size];
         }
 }
-return 0;
-}
 
