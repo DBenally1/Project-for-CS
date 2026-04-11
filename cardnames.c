@@ -24,12 +24,7 @@ int player2size = 26;
 int i;
 int j;
 
-split_assign(player1, player2);
-	
-for(i = 0; i < 26; i++){
-	player1[i] = i;
-	player2[i] = i + 26;
-}	
+split_assign(player1, player2);	
 
 int randompull1 = rand() % player1size;
 int randompull2 = rand() % player2size;
