@@ -69,7 +69,7 @@ int	da(void);
 int	ha(void);
 int	ca(void);
 int	sa(void);
-void print_card(int card);
+void printCard(int card);
 }
 
 void back(void)
