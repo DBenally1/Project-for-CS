@@ -17,6 +17,12 @@ void split_assign(int player1[], int player2[])
         int i;
         int j;
         int temp;
+
+         if (player1 == NULL || player2 == NULL) {
+                printf("Error: player hand array is NULL\n");
+                return;
+        }
+        
         /*fill the deck with values from 0-51*/
         for (i=0; i < total_cards; i++) {
                 deck[i] = i;
