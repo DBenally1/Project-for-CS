@@ -3,10 +3,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "printCard.h"
+#include "War_Cards.h"
+#include "split_assign.h"
 
-void printCard(int card);
-void back(void);
-void split_assign(int player1[], int player2[]);
+void waitForEnter(void)
+{
+	int ch;
+	printf("\nPress Enter for the next comparison.");
+	do {
+		ch = getchar();
+	} while (ch != '\n' && EOF);
+}
+
 int cardRank(int card){
 	int rank = card % 13;
 	if (rank == 12) return 13;
@@ -26,6 +35,8 @@ int j;
 
 split_assign(player1, player2);	
 
+while (player1size > 0 && player2size > 0) {
+
 int randompull1 = rand() % player1size;
 int randompull2 = rand() % player2size;
 
@@ -42,10 +53,10 @@ for (i = randompull2; i < player2size - 1; i++){
 }
 player2size--; 
 
-printf ("Player 1 drew card: %d\n", c1);
+printf ("Player 1 drew card: \n");
 printCard(c1);
 
-printf ("Player 2 drew card: %d\n", c2);
+printf ("Player 2 drew card: \n");
 printCard(c2);
 
 if (cardRank(c1) > cardRank(c2)){
@@ -54,7 +65,7 @@ if (cardRank(c1) > cardRank(c2)){
 	printf("Player 1 wins the round!\n");
 }
 else if (cardRank(c2) > cardRank(c1)){
-	player1[player2size++] = c1;
+	player2[player2size++] = c1;
 	player2[player2size++] = c2;
 	printf("Player 2 wins the round!\n");
 }
@@ -135,13 +146,15 @@ else{
 			player2[player2size++] = warPile[i];
 		}
 		printf ("Player 2 wins the war\n");
-		warWinnerFound = 1;
 		break;
 	} 
 	else{
 		printf ("WAR AGAIN!\n");
 	}
 	}
+}
+	printf({"\nPlayer 1 has %d cards. Player 2 has %d cards.", player1size, player2size);
+	waitForEnter();
 }
 	return 0;
 }
