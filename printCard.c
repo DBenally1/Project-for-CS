@@ -28,6 +28,11 @@ void printCard(int card)
     int rank;
     int suit;
 
+    if (card < 0 || card > 51) {
+        printf("Error: invalid card value %d\n", card);
+        return;
+        }
+
     rank = card % 13;
     suit = card / 13;
 
