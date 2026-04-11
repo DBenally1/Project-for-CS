@@ -6,6 +6,7 @@
 
 void printCard(int card);
 void back(void);
+void split_assign(int player1[], intplayer2[]);
 int cardRank(int card){
 	int rank = card % 13;
 	if (rank == 12) return 13;
@@ -14,7 +15,7 @@ int cardRank(int card){
 
 int main(void){
 srand (time(NULL));
-
+	
 int player1[52];
 int player2[52];
 int player1size = 26;
@@ -23,6 +24,8 @@ int player2size = 26;
 int i;
 int j;
 
+split_assign(player1, player2);
+	
 for(i = 0; i < 26; i++){
 	player1[i] = i;
 	player2[i] = i + 26;
@@ -56,7 +59,7 @@ if (cardRank(c1) > cardRank(c2)){
 	printf("Player 1 wins the round!\n");
 }
 else if (cardRank(c2) > cardRank(c1)){
-	player1[player1size++] = c1;
+	player1[player2size++] = c1;
 	player2[player2size++] = c2;
 	printf("Player 2 wins the round!\n");
 }
