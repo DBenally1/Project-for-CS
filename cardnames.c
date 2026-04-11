@@ -6,7 +6,7 @@
 
 void printCard(int card);
 void back(void);
-void split_assign(int player1[], intplayer2[]);
+void split_assign(int player1[], int player2[]);
 int cardRank(int card){
 	int rank = card % 13;
 	if (rank == 12) return 13;
